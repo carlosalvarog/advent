@@ -16,8 +16,7 @@ def is_robot_back(moves: str) -> bool | list[int]:
             if moves[i]=="?":
                 n=moves[i+1]
                 for j in range(0, len(moves)):
-                    if j!=i+1:
-                        
+                    if j!=i+1:   
                         if ((moves[j]==n and moves[j-1]!=  "!") or     (moves[j]==inverse[n] and moves[j-1]==  "!")):
                             start[0]+=mov[moves[i+1]][0]*-1
                             start[1]+=mov[moves[i+1]][1]*-1                       

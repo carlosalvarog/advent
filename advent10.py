@@ -35,7 +35,7 @@ def comp(instructions: List[str]):
                               continue
         print(d)       
         if  "A" not in d:
-               return "w"
+               return undefined
         else:
                return d["A"]
 
